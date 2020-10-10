@@ -1,0 +1,364 @@
+/*===================================
+  Color Codes
+  main color: #040466
+======================================*/
+
+html,
+body {
+  /* height: 100%; */
+  font-size: .875rem;
+  overflow-x: hidden;
+}
+/* body {
+    font-size: .875rem;
+  } */
+
+  /* .feather {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+  } */
+
+  /*
+   * Sidebar
+   */
+
+  .sidebar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100; /* Behind the navbar */
+     /*padding: 48px 0 0; Height of navbar */
+    background-color: #3498DB;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    line-height: 1;
+  }
+  #menu {
+    background-color: #fff;
+  }
+  #brand-logo {
+    width: 100px;
+    margin: 0;
+    padding-top: 10px; 
+    padding-right: 10px;
+    margin-left: -5px;
+  }
+
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+
+.sidebar-sticky ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+    word-wrap: break-word;
+    line-height: .5;
+}
+
+  @supports ((position: -webkit-sticky) or (position: sticky)) {
+    .sidebar-sticky {
+      position: -webkit-sticky;
+      position: sticky;
+    }
+  }
+
+  .sidebar .nav-link {
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .sidebar .nav-link .feather {
+    /* margin-right: 4px; */
+    color: #999;
+  }
+
+  .sidebar .nav-link.active {
+    color: #007bff;
+  }
+
+  .sidebar .nav-link:hover .feather,
+  .sidebar .nav-link.active .feather {
+    color: inherit;
+  }
+
+  .sidebar-heading {
+    font-size: .75rem;
+    text-transform: uppercase;
+  }
+
+  hr{
+      width: 90px;
+      z-index: 100;
+      margin: 0 auto;
+      background-color: white;
+  }
+
+  /*
+   * Content
+   */
+
+  [role="main"] {
+    padding-top: 133px; /* Space for fixed navbar */
+  }
+
+  @media (min-width: 768px) {
+    [role="main"] {
+      padding-top: 48px; /* Space for fixed navbar */
+    }
+  }
+
+  /*
+   * Navbar
+   */
+
+  .navbar-brand {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    /* font-size: 1rem; */
+    font-size: 14px;
+    /* background-color: rgba(0, 0, 0, .25);
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25); */
+  }
+
+  .navbar .form-control {
+    padding: .75rem 1rem;
+    border-width: 0;
+    border-radius: 0;
+  }
+
+  .form-control-dark {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .1);
+    border-color: rgba(255, 255, 255, .1);
+  }
+
+  .form-control-dark:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+  }
+
+/* ===========================
+   Card elements
+==============================*/
+/* Accueil elements */
+.card-1{
+    background-color:  #3498db;
+    color: #fff;
+}
+.card-1 .card-body {
+  background-color:  #3498DB;
+}
+.card-2{
+  background-color:  #F39C12;
+  color: #fff;
+}
+.card-2 .card-body {
+background-color:  #F39C12;
+}
+.card-3{
+  background-color:  #119411;
+  color: #fff;
+}
+.card-3 .card-body {
+background-color:  #119411;
+}
+.card-4{
+  background-color:  #dc143c;
+  color: #fff;
+}
+.card-4 .card-body {
+background-color:  #dc143c;
+}
+
+.card h3{
+    margin-top: -10px;
+    font-size: 15px;
+}
+
+/* Id Parent elements */
+.card-body{
+  background: rgb(236, 237, 241);
+}
+.card-top{
+  margin-top: -10px;
+  border: 1px solid rgb(220, 221, 224);
+  padding: 15px 20px;
+  background: rgb(220, 221, 224);
+}
+.card-top h5{
+  font-size: 10px;
+  font-weight: bold;
+}
+.card-top h5 .nom{
+  font-size: 20px;
+  font-weight: bold;
+}
+.card-body ul{
+  margin-left: -35px;
+}
+.card-body ul li{
+  list-style: none;
+  font-size: 10px;
+  border: 1px solid rgb(220, 221, 224);
+  background: rgb(220, 221, 224);
+  padding: 2px 10px;
+  margin: 10px 0;
+}
+/* Accueil communiquer */
+#form-communiquer {
+  background: #e2e2e2;
+}
+#form-communiquer form{
+  background: #f8f8f8;
+}
+.accueil-communiquer {
+  border: 1px solid #eeeeee;
+  padding: 10px;
+  box-shadow: 1px 5px 5px 5px #b9b9b9;
+}
+.address-accueil {
+  border: 1px solid #eeeeee;
+  padding: 10px;
+}
+.address-accueil form {
+  background: #f8f8f8;
+}
+  /* =========================
+    Table elements
+  ===========================*/
+  #home-table td{
+    vertical-align: baseline;
+  }
+  td {
+    vertical-align: bottom;
+  }
+
+  /* ==========================
+      login-page
+  =============================*/
+  #login-page{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/logoTaxi.jpeg");
+    background-position: center;
+    background-size: cover;
+    /* position: relative; */
+
+  }
+  .form-parent{
+    margin-top: 150px;
+  }
+  .form-parent h1 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 45px;
+  }
+
+  .form-signin {
+    width: 100%;
+    /* max-width: 330px; */
+    max-width: 520px;
+    padding: 15px;
+    margin-top: 100px;
+    margin: auto;
+    background-color: transparent;
+    border-radius: 5px;
+  }
+  .form-signin .checkbox {
+    font-weight: 400;
+  }
+  .form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  #signuppop input{
+    border-radius: 20px;
+  }
+
+  /* ============================
+      Gestion parent elements
+  ===============================*/
+  .table-parent-gp{
+    border: 1px solid #9c9a9a9a;
+    border-radius: 2px;
+    padding: 30px 10px 0 10px;
+    /* margin-bottom: 20px; */
+    box-shadow: 3px 3px 5px 7px #9c9a9a9a;
+  }
+
+  /* =========================================
+                  Clients
+  ============================================ */
+  #clients{
+      background: #fff !important;
+      border: 2px solid #000;
+
+  }
+
+  /* #clients .horizontal-heading {
+      margin-bottom: 30px;
+  } */
+
+  #clients_list {
+      background: #fff;
+      border: 2px solid gray;
+  }
+
+  .client {
+      padding: 0;
+      /* max-width: 150px; */
+      max-height: 200px;
+      margin: 0 auto;
+      /* line-height: 100px; */
+      background: #fff;
+  }
+
+  .client img {
+      display: inline-block !important;
+      background: #fff;
+  }
+
+    /* =========================================
+                  Destination
+  ============================================ */
+  .destination-form {
+    border: 2px solid #d3d1d1;
+    border-radius: 7px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px 5px #d3d1d1;
+  }
+
+footer{
+  position: relative;
+}
+footer div{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  margin-left: -20px;
+}
